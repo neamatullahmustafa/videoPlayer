@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>videoPlayer </title>
 </head>
-<body>
+
+<body class="d-flex flex-column ">
+    <h1>V I D E O P L A Y E R</h1>
+    <div id="container">
+        <video src="videos/Fairly OddParents _ Theme Song _ Nick.mp4" id="video"></video>
+        <meter id ="meter" min="0" value="0" max="100"></meter>
+        <i class="fa-solid fa-circle-play d-block "></i>
+        <div id="control">
+            <div><i class="fa-solid fa-backward"></i>
+                <i class="fa-solid fa-backward-fast"></i>
+                <i class="fa-solid fa-play d-inline  "></i>
+                <i class="fa-solid fa-pause d-none "></i>
+                <i class="fa-solid fa-forward-fast"></i>
+                <i class="fa-solid fa-forward"></i>
+            </div>
+            <div class="d-flex ">
+                <div class="d-inline position-relative "> <i class="fa-solid fa-clock pt-2 "></i>
+                    <div class="bg-light p-2 rounded-2 gap-2  d-flex flex-column d-none  position-absolute  dropdown ">
+                        <span>0.25</span><span>0.5</span><span>0.75</span><span>1</span><span>1.25</span><span>1.5</span><span>1.75</span><span>2</span>
+                    </div>
+                </div>
+                <div class="d-inline position-relative "> <i class="fa-solid fa-volume-high pt-2 "></i>
+                    <div class="bg-light p-2 rounded-2  gap-2 d-none  d-flex flex-column position-absolute dropdown2">
+                        <span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>
