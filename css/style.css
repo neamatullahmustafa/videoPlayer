@@ -11,7 +11,7 @@ body {
 /* .dropdown2 :nth-child(4){color: aqua!important;} */
 #control,
 video,
-meter {
+#meter {
     width: 90%;
     margin: auto;
 }
@@ -75,7 +75,7 @@ samp {
     margin: 0 3px;
 }
 
-meter {
+#meter { 
     margin: 0 auto;
     padding: 0;
 }
